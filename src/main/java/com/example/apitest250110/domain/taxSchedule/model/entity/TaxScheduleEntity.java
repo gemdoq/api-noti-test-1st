@@ -1,6 +1,7 @@
 package com.example.apitest250110.domain.taxSchedule.model.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 @Entity
 @Data
