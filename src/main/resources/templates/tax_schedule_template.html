@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>세무 일정 알림 테스트 메일</title>
+</head>
+<body>
+    <h1>세무 일정 알림 테스트 메일</h1>
+    <p>지정된 날짜에 해당되는 세무 일정 목록</p>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>날짜</th>
+            <th>세무 내용</th>
+            <th>비고</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="schedule : ${schedules}">
+            <td th:text="${schedule.taxScheduleDate}"></td>
+            <td th:text="${schedule.taxContent}"></td>
+            <td th:text="${schedule.remark}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
