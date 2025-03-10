@@ -1,4 +1,4 @@
-# Tax Schedule Notification System
+# Notification System
 
 ## Overview
 This project is a notification system designed to filter tax schedules from a database based on a specific date range and send personalized email notifications using an SMTP server. 
